@@ -1,1 +1,1 @@
-# Fake_new_detection_project_3
+# Fake_news_detection_project_3
