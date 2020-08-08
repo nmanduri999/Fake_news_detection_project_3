@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>Real or fake news?</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container">
+<h1>Fake news detection</h1>
+  <div class="row">
+    <div class="col-9">
+      <form method="POST">
+      <textarea id="article" name="article" rows="15" cols="50" autofocus="true" placeholder="Paste article here"></textarea>
+      <button type="submit">Go</button>
+      </form>
+    </div>
+
+    <div class="col-3">
+      {{ article }}
+    </div>
+
+  </div> <!--row-->
+</div> <!--container-->
+</body>
