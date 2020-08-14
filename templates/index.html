@@ -10,7 +10,7 @@
 <div class="container">
 <h1>Fake news detection</h1>
   <div class="row">
-    <div class="col-9">
+    <div class="col-6">
       <form method="POST">
       <textarea id="article" name="article" rows="15" cols="50" autofocus="true" placeholder="Paste article here"></textarea>
       <button type="submit">Go</button>
@@ -18,8 +18,11 @@
     </div>
 
     <div class="col-3">
-      <h2>Result:</h2>
-      {{ article }}
+      {% if article %} {{ article }} {% endif %}
+    </div>
+    <div class="col-3">
+      <h2>We think this is:</h2>
+      <h1>{% if result %} {{ result }} {% endif %}</h1>
     </div>
 
   </div> <!--row-->
