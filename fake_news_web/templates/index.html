@@ -6,7 +6,7 @@
   
   <title>Real or fake news?</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
@@ -21,14 +21,18 @@
     <div class="center">
       <h1>Welcome to News Detection</h1>
       <h2>Input and Detect News</h2>
-      <input type="news" class="form-control" aria-describedby="newsText" placeholder="Input news">
-      <!-- <textarea id="article" name="article" rows="15" cols="50" autofocus="true" placeholder="Paste article here">{% if article %}{{article}}{% endif %}</textarea> -->
-      <button id="myBtn" type="submit" class="btn btn-dark">Go</button>
+      <!-- <input type="news" class="form-control" aria-describedby="newsText" placeholder="Input news"> -->
+      <!-- <button id="article" type="submit" class="btn btn-dark">Go</button> -->
+      <form method="POST">
+        <input type="news" class="form-control" aria-describedby="newsText" placeholder="Input news">
+        <!-- <textarea id="article" name="article" rows="15" cols="50" autofocus="true" placeholder="Paste article here">{% if article %}{{article}}{% endif %}</textarea> -->
+        <button type="submit" class="btn btn-dark">Go</button>
+      </form>
 
       <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <p>some result</p>
+          <!-- <p>some result</p> -->
           <h1>{% if result %} {{ result }}! {% endif %}</h1>
         </div>
       
@@ -83,7 +87,7 @@
     var modal = document.getElementById("myModal");
     
     // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+    var btn = document.getElementById("article");
     
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Real or fake news?</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper2">
+        <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="methods.html">Methods</a></li>
+              <li><a href="summary.html">Summary</a></li>
+            </ul>
+          </nav>
+    </div>
+    <br>
+    <hr style="border: 1px solid #F8F8FF;" />
+    <br>
+
+
+    <div class="container-fluid padding">
+		<div class="row padding">
+
+			<div class="col-md-6">
+				<h2>Natural Language Processing</h2>
+				<br>
+				<ul>
+                    <li>Tokenization</li>
+                    <li>Stopwords filtering</li>
+                    <li>Lemmatizing</li>
+                    <li>TFIDF count vectorizer</li>
+                </ul>
+
+			</div>
+			<div class="col-md-6">
+					<img src="../static/img/img3.jpg" class="img-thumbnail" >
+			</div>
+		</div>
+    </div>
+
+    <br>
+    <hr style="border: 1px solid #F8F8FF;" />
+    <br>
+
+ 	<div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+				<h1>N-Grams</h1>
+			</div>
+		</div>
+    </div>  
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <img src="../static/img/true_bigram.jpg" style="width:100%">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+            <div class="thumbnail">
+                <img src="../static/img/fake_bigram.jpg" style="width:100%">
+            </div>
+            </div>
+          
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <img src="../static/img/true_trigram.jpg" style="width:100%">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+            <div class="thumbnail">
+                <img src="../static/img/fake_trigram.jpg" style="width:100%">
+            </div>
+            </div>
+          
+        </div>
+      </div>
+
+      <br>
+      <hr style="border: 1px solid #F8F8FF;" />
+      <br>
+
+    <div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+				<h1>Word Cloud</h1>
+			</div>
+		</div>
+    </div>  
+
+    <div class="w3-content w3-display-container">
+
+        <div class="w3-display-container mySlides">
+          <img src="../static/img/true_wordcloud.png" style="width:100%">
+          <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            True WordCloud
+          </div>
+        </div>
+        
+        <div class="w3-display-container mySlides">
+          <img src="../static/img/fake_wordcloud.png" style="width:100%">
+          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+            Fake WordCloud
+          </div>
+        </div>
+
+        
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+        
+    </div>
+    
+
+    <br>
+    <hr style="border: 1px solid #F8F8FF;" />
+    <br>
+
+    <div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+				<h1>Training Models</h1>
+			</div>
+		</div>
+    </div> 
+
+    <div class="container-fluid padding">
+		<div class="row padding">
+
+			<div class="col-md-4">
+				<h2>Logistic Regression</h2>
+				<br>
+				<ul>
+                    <li>Training Data Score: 0.9404</li>
+                    <li>Accuracy is:  0.9202</li>
+                    <li>Mean Squared Error is: 0.2825</li>
+                </ul>
+
+			</div>
+			<div class="col-md-4">
+                    
+                    <img src="../static/img/lr_rp.jpg" class="img-thumbnail" >
+            </div>
+            <div class="col-md-4">
+                <img src="../static/img/lr_cm.jpg" class="img-thumbnail" >
+        </div>
+		</div>
+    </div>
+
+    <br>
+    <hr style="border: 1px solid #F8F8FF;" />
+    <br>
+
+    <div class="container-fluid padding">
+		<div class="row padding">
+
+            <div class="col-md-4">
+                <img src="../static/img/nb_cm.jpg" class="img-thumbnail" >
+        </div>
+			<div class="col-md-4">
+				<h2>Naive Bayes</h2>
+				<br>
+				<ul>
+                    <li>Accuracy is:  0.8932</li>
+                    <li>Mean Squared Error is: 0.3269</li>
+                </ul>
+
+			</div>
+
+            <div class="col-md-4">
+                <img src="../static/img/nb_rp.jpg" class="img-thumbnail" >
+        </div>
+		</div>
+    </div>
+
+    <br>
+    <hr style="border: 1px solid #F8F8FF;" />
+    <br>
+
+    <div class="container-fluid padding">
+		<div class="row padding">
+
+            <div class="col-md-4">
+                <img src="../static/img/rf_rp.jpg" class="img-thumbnail" >
+            </div>
+
+            <div class="col-md-4">
+                <img src="../static/img/rf_cm.jpg" class="img-thumbnail" >
+            </div>
+			<div class="col-md-4">
+				<h2>Random Forest</h2>
+				<br>
+				<ul>
+                    <li>Accuracy is:  0.9204</li>
+                    <li>Mean Squared Error is: 0.2822</li>
+                </ul>
+
+			</div>
+
+        
+		</div>
+    </div>
+
+    <br>
+    <hr style="border: 1px solid #F8F8FF;" />
+    <br>
+
+    <div class="container-fluid padding">
+		<div class="row padding">
+
+			<div class="col-md-6">
+				<h2>Netural Network with Keras</h2>
+				<br>
+				<ul>
+                    <li>Total params: 111,582</li>
+                    <li>Accuracy: 0.9074</li>
+                    <li>Loss: 0.3015</li>
+                </ul>
+
+            </div>
+            <div class="col-md-6">
+                <img src="../static/img/nl_test.jpg" class="img-thumbnail" >
+            </div>
+
+        
+		</div>
+    </div>
+
+    <br>
+    <hr style="border: 1px solid #F8F8FF;" />
+    <br>
+
+    <div class="container-fluid padding">
+		<div class="row padding">
+
+            <div class="col-md-6">
+                <img src="../static/img/deeplearn_test.jpg" class="img-thumbnail" >
+            </div>
+
+			<div class="col-md-6">
+				<h2>Deep Learning</h2>
+				<br>
+				<ul>
+                    <li>Total params: 111,602</li>
+                    <li>Accuracy: 0.9074</li>
+                    <li>Loss: 0.3015</li>
+                </ul>
+
+            </div>
+
+        
+		</div>
+    </div>
+
+
+    <br>
+    <hr style="border: 1px solid #F8F8FF;" />
+    <br>
+
+    <div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+				<h1>Summary of Models</h1>
+			</div>
+		</div>
+    </div> 
+
+    <table width="100%" height="350">
+        <tr style="background-color: rgb(235, 156, 235)">
+          <th>Method</th>
+          <th>Accuracy</th>
+          <th>Loss</th>    
+        </tr>
+        <tr>
+          <td>Logistic Regression</td>
+          <td>0.9202</td>    
+          <td>0.2825</td>
+        </tr>
+        <tr>
+            <td>Naive Bayes</td>
+            <td>0.8932</td>
+            <td>0.3268</td>
+        </tr>
+        <tr>
+            <td>Random Forest</td>
+            <td>0.9204</td>
+            <td>0.2822</td>
+        </tr>
+        <tr>
+            <td>Neural Network</td>
+            <td>0.9074</td>
+            <td>0.3015</td>
+        </tr>
+        <tr>
+            <td>Deep Learning</td>
+            <td>0.8978</td>
+            <td>0.4009</td>
+        </tr>
+    </table>
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    
+
+  
+</body>
+</html>
