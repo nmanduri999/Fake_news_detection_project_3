@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  
+  <title>Real or fake news?</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a  href="methods.html">Methods</a></li>
+        <li><a  href="summary.html">Summary</a></li>
+      </ul>
+    </nav>
+    <div class="center">
+      <h1>Welcome to News Detection</h1>
+      <h2>Input and Detect News</h2>
+      <input type="news" class="form-control" aria-describedby="newsText" placeholder="Input news">
+      <!-- <textarea id="article" name="article" rows="15" cols="50" autofocus="true" placeholder="Paste article here">{% if article %}{{article}}{% endif %}</textarea> -->
+      <button id="myBtn" type="submit" class="btn btn-dark">Go</button>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>some result</p>
+          <h1>{% if result %} {{ result }}! {% endif %}</h1>
+        </div>
+      
+      </div>
+    </div>
+
+  </div>
+
+  <hr style="border: 1px solid #F8F8FF;" />
+  <br>
+
+	<div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+				<h1>Fake News Dectection Overview</h1>
+			</div>
+		</div>
+  </div>
+  
+  <div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-12">
+				<p class="lead">
+          In today’s world,news is spreading fast with the internet,people are reading itwithout knowing it is true or fake.
+          Fake news could cause a variety of problems and misleading people,hence we combined 3 differnt sets of databases
+          and applied machine learning through 33,894 fake news and 31,804 true news. 
+				</p>
+        <p class="lead">We included methods like:</p>
+        <ul class="lead">
+          <li>NLP(Natural Language Processing)</li>
+          <li>N-Grams</li>
+          <li>Logistic Regression</li>
+          <li>Naive Bayes</li>
+          <li>Random Forest</li>
+          <li>Netural Network</li>
+          <li>Deep Learning</li>
+        </ul>
+			</div>
+		</div>
+  </div>
+  
+  <div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+				<h1>Team Members</h1>
+			</div>
+		</div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+  
+</body>
+</html>
