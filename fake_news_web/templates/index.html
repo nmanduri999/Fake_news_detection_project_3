@@ -20,27 +20,27 @@
     </nav>
     <div class="center">
       <h1>Welcome to News Detection</h1>
-      <h2>Input and Detect News</h2>
+      <h2>Explore Your News Today!</h2>
       <!-- <input type="news" class="form-control" aria-describedby="newsText" placeholder="Input news"> -->
       <!-- <button id="article" type="submit" class="btn btn-dark">Go</button> -->
-      <form method="POST">
+      <!-- <form method="POST">
         <input type="news" class="form-control" aria-describedby="newsText" placeholder="Input news">
-        <!-- <textarea id="article" name="article" rows="15" cols="50" autofocus="true" placeholder="Paste article here">{% if article %}{{article}}{% endif %}</textarea> -->
+        <textarea id="article" name="article" rows="15" cols="50" autofocus="true" placeholder="Paste article here">{% if article %}{{article}}{% endif %}</textarea>
         <button type="submit" class="btn btn-dark">Go</button>
-      </form>
+      </form> -->
 
-      <div id="myModal" class="modal">
+      <!-- <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <!-- <p>some result</p> -->
+          <p>some result</p>
           <h1>{% if result %} {{ result }}! {% endif %}</h1>
         </div>
       
-      </div>
+      </div> -->
     </div>
 
   </div>
-
+  <br>
   <hr style="border: 1px solid #F8F8FF;" />
   <br>
 
@@ -73,14 +73,43 @@
 			</div>
 		</div>
   </div>
+
+  <br>
+  <hr style="border: 1px solid #F8F8FF;" />
+  <br>
+
+	<div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+				<h1>Make your Detection here</h1>
+			</div>
+		</div>
+  </div>
+
+  <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <form method="POST">
+          <textarea id="article" name="article" rows="15" cols="50" autofocus="true" placeholder="Paste article here">{% if article %}{{article}}{% endif %}</textarea>
+          <button type="submit">Go</button>
+          </form>
+        </div>
+        
+        <div class="col-3">
+          <h2>We think this is:</h2>
+          <h1>{% if result %} {{ result }}! {% endif %}</h1>
+        </div>
+    
+      </div> <!--row-->
+    </div>
   
-  <div class="container-fluid">
+  <!-- <div class="container-fluid">
 		<div class="row jumbotron">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
 				<h1>Team Members</h1>
 			</div>
 		</div>
-  </div>
+  </div> -->
 
   <script>
     // Get the modal

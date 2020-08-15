@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from tensorflow.keras.models import load_model
+# import pickle
 import nltk
 from nltk.stem import WordNetLemmatizer
 import re
@@ -7,6 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from joblib import dump, load
 
 model = load_model("neural_network.h5")
+# model = dump("neural_network.h5")
 tfIdfVectorizer=load('tfidfV.joblib')
 
 def findClass(new_data):
