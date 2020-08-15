@@ -31,7 +31,7 @@ def findClass(new_data):
 
 app = Flask(__name__)
 
-@app.route("/", methods = ['POST', 'GET'])
+@app.route("/index.html", methods = ['POST', 'GET'])
 def home():
 
     article = request.form.get('article')
@@ -40,6 +40,14 @@ def home():
     else:
         result = None
     return render_template("index.html", article=article, result=result)
+
+@app.route("/methods.html")
+def methods():
+    return render_template("methods.html")
+
+@app.route("/summary.html")
+def summary():
+    return render_template("summary.html")
 
 
 if __name__ == "__main__":
