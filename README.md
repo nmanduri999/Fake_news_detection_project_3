@@ -13,5 +13,5 @@ In today’s world, news spreads fast over the internet, and it is often hard to
 * Neural Network
 * Deep Learning
 
-Website Link:
-https://trueorfakenews.herokuapp.com/index.html 
+***Website***
+[Fake or Real News Detection](https://trueorfakenews.herokuapp.com/index.html)
