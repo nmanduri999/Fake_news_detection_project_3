@@ -1,4 +1,4 @@
-# Fake_news_detection_project_3
+# Fake News Detection
 
 Website Link:
 https://trueorfakenews.herokuapp.com/index.html 
